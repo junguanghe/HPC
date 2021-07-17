@@ -6,6 +6,7 @@ Version: 1.1 20210501 Fixed an error in dealing with boundary conditions.
 Version: 2.0 20210502 Make use of the LAPACK_ROW_MAJOR option, and get rid of
                       the manual transpose of the RHS in the implicit x-direction step.
                       Add more detailed comments.
+Version: 2.1 20210716 Fix dx=N-1, i.e. N-1 intervals between N grid points
 */
 
 #include <stdio.h>
