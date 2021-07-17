@@ -64,7 +64,7 @@ int main(int argc, char* argv[])
 	
    //Initialize the tridiagonal matrices
    double dt = 1000.0/M; // Terminal time = 1000
-   double dx = 1.0/N;    // grid is from 0 to 1 in x and y direction
+   double dx = 1.0/(N-1);    // grid is from 0 to 1 in x and y direction
    double Udiag = 1 + dt*Du/dx/dx;
    double Vdiag = 1 + dt*Dv/dx/dx;
    double Uoffdiag = -0.5*dt*Du/dx/dx;
